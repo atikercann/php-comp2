@@ -1,0 +1,22 @@
+{
+    "name": "phpsandbox/standard",
+    "description": "Official scaffold for Standard notebooks on PHPSandbox",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olatunbosun Egberinde",
+            "email": "bosunski@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "require-dev": {
+        "phpcompatibility/php-compatibility": "*"
+    },
+    "scripts": {
+        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths vendor/phpcompatibility/php-compatibility",
+        "post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths vendor/phpcompatibility/php-compatibility"
+    }
+}
